@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/* boxes */
+.whole {
+  position: relative;
+  /* background-color: rgb(82, 185, 185); */
+  }
+.boxes {
+  margin: 1rem;
+  aspect-ratio: 2.1;
+  /* height:48vw;
+  width: 98vw; */
+  display: grid;
+  grid-template-columns: 3fr 0.2fr 3fr 0.2fr 3fr;
+  grid-template-rows: 10fr 1.45fr 20fr 1fr 2fr;
+  z-index: 0;
+  /* gap: 0px; */
+}
+/* .cells {
+  border: 1px solid brown;
+  background-color: aquamarine;
+} */
+.blue {
+  background-color: rgb(82, 185, 185);
+  border: 0.2em solid rgb(82, 185, 185);
+}
+.mid {
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+.left{
+  margin-right: 0rem;
+}
+.right{
+  margin-left: 0rem;
+}
+.white {
+  background-color: white;
+}
+.green {
+  background-color: greenyellow;
+}
+.coral {
+  background-color: rgb(231, 112, 160);
+}
+
+.yellow {
+  background-color: rgb(255, 221, 0);
+}
+
+/* circles */
+.circles {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+.small_circle {
+  --sizer_small: 4vw;
+  height: var(--sizer_small);
+  width: var(--sizer_small);
+  border-radius: 50%;
+  position: relative;
+}
+/* added variable to change size more quickly in two places */
+.large_circle {
+  --sizer_large: 8vw;
+  height: var(--sizer_large);
+  width: var(--sizer_large);
+  border-radius: 50%;
+  position: relative;
+}
+._1 {
+  /* in position */
+  left: 5vw;
+  top: 0.8vw;
+}
+._2 {
+  left: 5vw;
+  top: 6.75vw;
+}
+._3 {
+  left: 38.5vw;
+  top: -5vw;
+}
+.small_circle.yellow {
+  left: 18vw;
+  top: 7.5vw;
+}
+.large_circle.coral {
+  left: 29vw;
+  top: -5.75vw;
+}
+.large_circle.yellow {
+  left: 21vw;
+  top: -21vw;
+}
+
+/* triangles */
+.triangle_tall {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border-left: 20vw solid transparent;
+  border-right: 20vw solid transparent;
+  border-bottom: 50vw solid green;
+  scale: 66%;
+  left: 48.5vw;
+  top: 0.9vw;
+  /*
+scale: 68%; 
+left: 47vw;
+top: -46.8vw; */
+}
+.triangle_small {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border-left: 11.5vw solid transparent;
+  border-right: 11.5vw solid transparent;
+  border-bottom: 20vw solid rgb(192, 216, 94);
+  scale: 100%;
+  left: 75.6vw;
+  top: 22.4vw;
+}
+img {
+  max-width: 100%;
+}
+/* goldblum white images */
+.wht {
+  scale:500%
+}
+/* goldblum black images */
+
+.goldblums {
+  align-content: center;
+  align-items: center;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1;
+  /* top: -10vw; */
+  max-width: 55%;
+  z-index: 2;
+  bottom:3.5vw;
+  left: .7vw;
+}
+
+form {
+  background-color: aqua;
+  margin: 1rem;
+  padding: 0.25rem 1rem 1rem 1rem;
+}
